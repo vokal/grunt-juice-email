@@ -7,7 +7,7 @@
  */
 
 'use strict';
-var juice = require('juice');
+var juice = require('juice2');
 
 module.exports = function(grunt) {
 
