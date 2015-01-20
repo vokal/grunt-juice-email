@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "juice": "https://github.com/jrit/juice/tree/super.git"
+    "juice": "git://github.com/jrit/juice/tree/super.git"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
