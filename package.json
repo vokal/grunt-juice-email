@@ -22,13 +22,13 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "juice": "git://github.com/jrit/juice.git#super"
+    "juice": "git://github.com/automattic/juice.git"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
