@@ -7,12 +7,12 @@
  */
 
 'use strict';
-var juice = require('juice2');
+var juice = require('juice');
 
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('juice',
-      'Inline stylesheets into email HTML templates using LearnBoost\'s Juice',
+      'Inline stylesheets into email HTML templates using Juice',
       function() {
         var options = this.options({}),
             done = this.async(),
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             return true;
           }).forEach(function(filepath) {
             jobs.push(function(callback) {
-              juice(filepath, options, function(err, html) {
+              juice.juiceFile(filepath, options, function(err, html) {
                 if (err) {
                   callback(err);
                   grunt.warn(err, 3);
